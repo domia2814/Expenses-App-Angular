@@ -1,0 +1,42 @@
+ <div class="form-main">
+    <p>NEW EXPENSE</p>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form">
+                <div>
+                    <label for="name"> Name </label>
+                    <input 
+                    type="text" 
+                    id="name" 
+                    class="form-control"
+                    name="name"
+                    ngModel
+                    required>
+                </div>
+                <div>
+                    <label for="price"> Price </label>
+                    <input 
+                    type="number" 
+                    id="price" 
+                    class="form-control"
+                    name="price"
+                    ngModel
+                    required
+                    pattern="^[1-9]+[0-9]*$">
+                </div>
+                <div>
+                    <button 
+                    class="button" 
+                    type="submit"
+                    [disabled]="!f.valid"
+                  > Add </button>
+                </div>
+                <div>
+                    <label for="category"> Select category: </label><br><br>
+                      <label><input type="radio" id="food" name="category" value="FOOD" ngModel required><i class='ti-shopping-cart'></i> FOOD </label><br>
+                      <label><input type="radio" id="travels" name="category" value="TRAVELS" ngModel required><i class='ti-car'></i> TRAVELS </label><br>
+                      <label><input type="radio" id="bills" name="category" value="BILLS" ngModel required><i class='ti-email'></i> BILLS </label><br>
+                      <label><input type="radio" id="health" name="category" value="HEALTH" ngModel required><i class='ti-pulse'></i> HEALTH </label>
+                </div>
+            </div>
+        </form>
+    </div>

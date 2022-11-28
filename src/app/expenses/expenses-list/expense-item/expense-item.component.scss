@@ -1,0 +1,45 @@
+@import "@fontsource/roboto";
+
+
+
+.item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px rgb(153, 109, 109) solid;
+    width: 100%;
+    gap: 5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: rgb(150, 118, 118,0.8);
+    border-radius: 0.5rem;
+      
+    h4 {
+        width: 5rem
+    }
+
+    p {
+        width: 2rem
+    }
+}
+
+.button-delete {
+    background-color: rgb(159, 62, 62);
+    border: 1px;
+    padding: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    margin: 0.5rem;
+    color: white
+
+}
+.button-edit {
+    background-color: rgb(117, 129, 138);
+    border: 1px;
+    padding: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    margin: 0.5rem
+}
