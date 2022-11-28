@@ -20,7 +20,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem
+    gap: 1rem;
 }
 
 p {
@@ -28,4 +28,11 @@ p {
     align-items: center;
     justify-content: center;
 
+    .ti-shopping-cart, .ti-car, .ti-email, .ti-pulse {
+        border: 1px solid white;
+        border-radius: 100%;
+        padding: 0.5rem;
+        background-color: rgb(255, 255, 255, 0.7);
+        font-weight: 600;
+    }
 }

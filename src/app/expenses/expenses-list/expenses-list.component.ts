@@ -22,7 +22,6 @@ export class ExpensesListComponent implements OnInit, OnDestroy {
       (expenses: Expense[]) =>
       this.expenses = expenses
     )
-    
   }
 
   ngOnDestroy(): void {

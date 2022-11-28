@@ -1,17 +1,12 @@
-
-
 * {
 margin: 1rem;
 padding: 0;
 font-weight: 600;
-
-
 }
 
 .navbar {
     display: flex;
    
-    
     &__list{
         display: flex;
         justify-content: space-evenly;
@@ -30,8 +25,7 @@ font-weight: 600;
 
         a:hover {
             color: rgb(184, 150, 150)
-        }
-       
+        } 
     }
 }
 

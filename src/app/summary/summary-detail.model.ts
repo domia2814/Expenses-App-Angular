@@ -1,6 +1,8 @@
+import { Category } from "../expenses/expense.model";
+
 export class SummaryDetail {
     constructor(
-        public category: string,
+        public category: Category,
         public sum: number,  
     )
  {}

@@ -2,7 +2,7 @@
         <h4> {{ expense.name }} </h4>
         <p> {{ expense.price | currency:'USD' : 'symbol':'1.2-2'  }} </p>
         <p> {{ expense.category }} </p>
-        <p> <i *ngIf="expense.category ==='FOOD'" class="ti-shopping-cart" ></i>
+        <p> <i *ngIf="expense.category === 'FOOD'" class="ti-shopping-cart" ></i>
             <i *ngIf="expense.category ==='TRAVELS'" class="ti-car" ></i> 
             <i *ngIf="expense.category ==='BILLS'" class="ti-email" ></i>
             <i *ngIf="expense.category ==='HEALTH'" class="ti-pulse" ></i>
