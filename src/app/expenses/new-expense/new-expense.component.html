@@ -1,6 +1,6 @@
  <div class="form-main">
     <p>NEW EXPENSE</p>
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
             <div class="form">
                 <div>
                     <label for="name"> Name </label>
@@ -27,7 +27,7 @@
                     <button 
                     class="button" 
                     type="submit"
-                    [disabled]="!f.valid"
+                    [disabled]="!form.valid"
                   > Add </button>
                 </div>
                 <div>
